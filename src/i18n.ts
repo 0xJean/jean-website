@@ -27,11 +27,11 @@ export const en: Dict = {
   'about.k': '01 — About',
   'about.title': 'Engineer first.<br><em>Founder by habit.</em>',
   'about.p1':
-    'I started writing production software in 2010 and founded my first company in 2014. In 2017 I went all-in on crypto — less for the tokens than for the engineering problem: financial infrastructure where one bug can cost millions and downtime is measured in lost trust.',
+    'I’ve been writing production software since 2010 and building companies since 2014. In 2017 I moved into crypto full-time — less for the tokens than for the engineering: financial infrastructure where a single bug can cost millions and every minute of downtime costs trust.',
   'about.p2':
-    'Since then I’ve designed and led a centralized exchange, an on-chain perpetuals exchange, a crypto payment network running on thousands of point-of-sale terminals, and a quant trading system — plus a handful of experiments in AI, GameFi and NFTs.',
+    'Since then I’ve taken four products from a blank page to real scale — a centralized exchange, an on-chain perpetuals exchange, a crypto payment network running on thousands of point-of-sale terminals, and a quant trading system — as founder, co-founder, CEO or CTO. I sit where the business and the architecture meet: deciding what to build, then making sure it holds.',
   'about.p3':
-    'I care about three things: systems that stay up, keys that stay safe, and teams that keep shipping long after launch day.',
+    'My bar is simple: if it moves money, it has to be boring — predictable under load, paranoid about keys, and run by a team that doesn’t need me in the room.',
   'stat.1': 'years shipping software',
   'stat.2': 'years in Web3',
   'stat.3': 'years as a founder',
@@ -50,7 +50,8 @@ export const en: Dict = {
   'p3.desc': 'Moved into crypto full-time, starting at the hardest layer: trading, custody and settlement.',
   'p4.year': 'Since',
   'p4.name': 'Exchanges, perps, payments, quant',
-  'p4.desc': 'Designed and led the four products below, each handling real money at real scale.',
+  'p4.desc':
+    'Built the four products below as founder, co-founder, CEO or CTO — each handling real money at real scale.',
   'p5.year': 'Now',
   'p5.name': 'The next hard problem',
   'p5.desc': 'Open to partnering with founders and investors on ambitious financial infrastructure.',
@@ -66,7 +67,8 @@ export const en: Dict = {
   'c1.tag': 'Centralized exchange',
   'c1.name': 'A crypto exchange, from a blank page',
   'c1.what': 'A full-featured spot exchange serving over a million daily active users.',
-  'c1.role': 'Designed the whole system end to end and led the engineering team through launch.',
+  'c1.role':
+    'Founding team and technical lead — designed the whole system end to end and led engineering through launch.',
   'c1.built':
     'An in-memory matching engine with millisecond latency, a data layer built for hundreds of millions of records, and hot/cold multisig custody that passed a financial-grade audit.',
   'c1.m1': 'matching latency',
@@ -76,7 +78,8 @@ export const en: Dict = {
   'c2.tag': 'On-chain perpetuals',
   'c2.name': 'A perpetuals exchange that lives on-chain',
   'c2.what': 'A decentralized exchange for perpetual futures, deployed across multiple chains.',
-  'c2.role': 'Architect and technical lead for the protocol and its smart contracts.',
+  'c2.role':
+    'Founding team — led the protocol architecture and the smart-contract engineering.',
   'c2.built':
     'Hundreds of in-house smart contracts forming a complete perpetuals ecosystem, with order matching that runs fully on-chain.',
   'c2.m1': 'total value locked',
@@ -86,7 +89,8 @@ export const en: Dict = {
   'c3.tag': 'Retail crypto payments',
   'c3.name': 'Paying with crypto at the checkout counter',
   'c3.what': 'A payment network that lets shops around the world accept dozens of tokens at the till.',
-  'c3.role': 'Designed the payment and custody architecture and led the build.',
+  'c3.role':
+    'Founding team — designed the payment and custody architecture and led the build.',
   'c3.built':
     'A gateway with HSM-protected keys and settlement in seconds, connected to thousands of point-of-sale terminals worldwide.',
   'c3.m1': 'POS terminals',
@@ -96,7 +100,8 @@ export const en: Dict = {
   'c4.tag': 'Quantitative trading',
   'c4.name': 'A quant system with a public scoreboard',
   'c4.what': 'Automated trading strategies on perpetual futures that others can follow through copy-trading.',
-  'c4.role': 'Built the system and the strategies myself.',
+  'c4.role':
+    'Founder — built the system and the strategies myself.',
   'c4.built':
     'A multi-asset perpetuals engine with copy-trading support, whose performance is public and verifiable.',
   'c4.m1': 'on the Binance leaderboard',
@@ -170,10 +175,11 @@ const zh: Dict = {
   'about.k': '01 — 關於我',
   'about.title': '首先是工程師，<br><em>習慣性地創業。</em>',
   'about.p1':
-    '我從 2010 年開始寫生產級程式碼，2014 年創立第一家公司。2017 年全心投入加密領域——吸引我的不是代幣，而是工程難題：在這裡，一個 bug 可能損失數百萬，停機失去的是信任。',
+    '我從 2010 年開始寫生產級程式碼，2014 年開始創業。2017 年全職投入加密領域——吸引我的不是代幣，而是工程本身：在這裡，一個 bug 可能損失數百萬，每一分鐘的停機都在消耗信任。',
   'about.p2':
-    '從那以後，我設計並主導了一家中心化交易所、一個鏈上永續合約交易所、一個運行在全球數千台 POS 終端上的加密支付網路，以及一套量化交易系統，還有幾個 AI、GameFi 與 NFT 方向的嘗試。',
-  'about.p3': '我在意三件事：系統不停擺、金鑰不外洩、團隊在上線之後依然能持續交付。',
+    '此後，我以創始人、聯合創始人、CEO 或 CTO 的身份，把四個產品從一張白紙做到真實規模：一家中心化交易所、一個鏈上永續合約交易所、一個運行在全球數千台 POS 終端上的加密支付網路，以及一套量化交易系統。我習慣站在商業與架構的交會點：先決定做什麼，再確保它扛得住。',
+  'about.p3':
+    '我的標準很簡單：只要經手資金，系統就必須「無聊」——高負載下可預期、對金鑰保持偏執，並由一支不需要我在場也能運轉的團隊來維護。',
   'stat.1': '年軟體開發',
   'stat.2': '年 Web3 實戰',
   'stat.3': '年創業經歷',
@@ -192,7 +198,8 @@ const zh: Dict = {
   'p3.desc': '全職進入加密領域，從最難的一層做起：交易、託管與結算。',
   'p4.year': '此後',
   'p4.name': '交易所、永續、支付、量化',
-  'p4.desc': '設計並主導了下面四個產品，每一個都承載著真實的資金與規模。',
+  'p4.desc':
+    '以創始人、聯合創始人、CEO 或 CTO 的身份打造了下面四個產品，每一個都承載著真實的資金與規模。',
   'p5.year': '現在',
   'p5.name': '下一個難題',
   'p5.desc': '期待與創始人和投資人一起，打造有野心的金融基礎設施。',
@@ -207,7 +214,8 @@ const zh: Dict = {
   'c1.tag': '中心化交易所',
   'c1.name': '從一張白紙開始的加密交易所',
   'c1.what': '功能完整的現貨交易所，日活躍用戶超過百萬。',
-  'c1.role': '端到端設計整套系統，帶領工程團隊直到上線。',
+  'c1.role':
+    '創始團隊成員兼技術負責人——端到端設計整套系統，帶領工程團隊直到上線。',
   'c1.built': '毫秒級響應的記憶體撮合引擎、承載億級資料的資料層，以及通過金融級安全審計的冷熱多簽託管體系。',
   'c1.m1': '撮合延遲',
   'c1.m2': '日活躍用戶',
@@ -216,7 +224,8 @@ const zh: Dict = {
   'c2.tag': '鏈上永續合約',
   'c2.name': '完全運行在鏈上的永續合約交易所',
   'c2.what': '去中心化的永續合約交易所，部署於多條公鏈。',
-  'c2.role': '協議與智能合約的架構師兼技術負責人。',
+  'c2.role':
+    '創始團隊成員——主導協議架構與智能合約開發。',
   'c2.built': '自研數百個智能合約，構建完整的永續合約生態，訂單撮合完全在鏈上執行。',
   'c2.m1': '鎖倉總值',
   'c2.m2': '用戶',
@@ -225,7 +234,8 @@ const zh: Dict = {
   'c3.tag': '線下加密支付',
   'c3.name': '在收銀台用加密貨幣付款',
   'c3.what': '讓全球商家在收銀台直接收取數十種代幣的支付網路。',
-  'c3.role': '設計支付與託管架構，並主導開發。',
+  'c3.role':
+    '創始團隊成員——設計支付與託管架構，並主導開發。',
   'c3.built': 'HSM 硬體加密保護金鑰、秒級到帳的支付閘道，連接全球數千台 POS 終端。',
   'c3.m1': 'POS 終端',
   'c3.m2': '日支付額度',
@@ -234,7 +244,8 @@ const zh: Dict = {
   'c4.tag': '量化交易',
   'c4.name': '戰績公開可查的量化系統',
   'c4.what': '永續合約自動化交易策略，其他人可以透過跟單參與。',
-  'c4.role': '系統與策略均由我親自打造。',
+  'c4.role':
+    '創始人——系統與策略均由我親自打造。',
   'c4.built': '支援多幣種永續合約與策略跟單的量化引擎，績效公開、可查證。',
   'c4.m1': '幣安排行榜名次',
   'c4.m2': '策略跟單',
