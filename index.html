@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>%META_TITLE%</title>
+    <meta name="description" content="%META_DESC%" />
+    <meta name="theme-color" content="#ECE9E2" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0E0E0D" media="(prefers-color-scheme: dark)" />
+    <meta property="og:title" content="%META_TITLE%" />
+    <meta property="og:description" content="%META_DESC%" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+TC:wght@400;500;600&family=Noto+Serif+TC:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <canvas id="engine" aria-hidden="true"></canvas>
+
+    <header class="nav">
+      <a class="brand" href="#top">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span class="brand-name">JEAN</span>
+        <span class="brand-role" data-i18n="nav.role"></span>
+      </a>
+      <nav class="nav-links" aria-label="Sections">
+        <a href="#about" data-i18n="nav.about"></a>
+        <a href="#products" data-i18n="nav.products"></a>
+        <a href="#stack" data-i18n="nav.stack"></a>
+        <a href="#contact" data-i18n="nav.contact"></a>
+      </nav>
+      <div class="lang" role="group" aria-label="Language">
+        <button type="button" data-lang="en" aria-pressed="true">EN</button>
+        <button type="button" data-lang="zh" aria-pressed="false">繁中</button>
+      </div>
+    </header>
+
+    <main id="top">
+      <!-- formation: order book -->
+      <section class="hero" data-formation>
+        <div class="col">
+          <p class="eyebrow reveal" data-i18n="hero.eyebrow"></p>
+          <h1 class="display reveal" data-i18n="hero.title"></h1>
+          <p class="lede reveal" data-i18n="hero.sub"></p>
+          <div class="ctas reveal">
+            <a class="btn btn-primary" data-link="tg" target="_blank" rel="noopener">
+              <span data-i18n="cta.tg"></span><span class="arrow" aria-hidden="true">→</span>
+            </a>
+            <a class="btn btn-ghost" data-link="x" target="_blank" rel="noopener">
+              <span data-i18n="cta.x"></span><span class="arrow" aria-hidden="true">↗</span>
+            </a>
+            <a class="btn btn-ghost" data-link="gh" target="_blank" rel="noopener">
+              <span data-i18n="cta.gh"></span><span class="arrow" aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-foot">
+          <a class="scroll-cue" href="#about"><span class="cue-line" aria-hidden="true"></span><span data-i18n="hero.scroll"></span></a>
+          <aside class="tape" aria-hidden="true">
+            <div class="tape-head">
+              <span class="live-dot"></span>
+              <span data-i18n="ticker.label"></span>
+              <span class="tape-rate"><b id="fill-rate">0</b> <span data-i18n="ticker.rate"></span></span>
+            </div>
+            <ol class="tape-rows" id="tape"></ol>
+          </aside>
+        </div>
+      </section>
+
+      <!-- formation: ring -->
+      <section id="about" class="section" data-formation>
+        <div class="col">
+          <p class="kicker reveal" data-i18n="about.k"></p>
+          <h2 class="title reveal" data-i18n="about.title"></h2>
+          <div class="prose">
+            <p class="reveal" data-i18n="about.p1"></p>
+            <p class="reveal" data-i18n="about.p2"></p>
+            <p class="reveal strong" data-i18n="about.p3"></p>
+          </div>
+          <dl class="stats reveal">
+            <div class="stat"><dt><span data-count="16">16</span></dt><dd data-i18n="stat.1"></dd></div>
+            <div class="stat"><dt><span data-count="10">10</span>+</dt><dd data-i18n="stat.2"></dd></div>
+            <div class="stat"><dt><span data-count="12">12</span></dt><dd data-i18n="stat.3"></dd></div>
+            <div class="stat"><dt>$B+</dt><dd data-i18n="stat.4"></dd></div>
+          </dl>
+        </div>
+      </section>
+
+      <!-- formation: helix -->
+      <section id="path" class="section" data-formation>
+        <div class="col">
+          <p class="kicker reveal" data-i18n="path.k"></p>
+          <h2 class="title reveal" data-i18n="path.title"></h2>
+          <ol class="timeline">
+            <li class="reveal"><span class="t-year" data-i18n="p1.year"></span><div><h3 data-i18n="p1.name"></h3><p data-i18n="p1.desc"></p></div></li>
+            <li class="reveal"><span class="t-year" data-i18n="p2.year"></span><div><h3 data-i18n="p2.name"></h3><p data-i18n="p2.desc"></p></div></li>
+            <li class="reveal"><span class="t-year" data-i18n="p3.year"></span><div><h3 data-i18n="p3.name"></h3><p data-i18n="p3.desc"></p></div></li>
+            <li class="reveal"><span class="t-year" data-i18n="p4.year"></span><div><h3 data-i18n="p4.name"></h3><p data-i18n="p4.desc"></p></div></li>
+            <li class="reveal now"><span class="t-year" data-i18n="p5.year"></span><div><h3 data-i18n="p5.name"></h3><p data-i18n="p5.desc"></p></div></li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- formation: lattice -->
+      <section id="products" class="section" data-formation>
+        <div class="col col-wide">
+          <p class="kicker reveal" data-i18n="work.k"></p>
+          <h2 class="title reveal" data-i18n="work.title"></h2>
+          <p class="note reveal"><span class="lock" aria-hidden="true">◼</span> <span data-i18n="work.nda"></span></p>
+
+          <ol class="cases">
+            <li class="case reveal">
+              <div class="case-head"><span class="case-no">01</span><span class="case-tag" data-i18n="c1.tag"></span></div>
+              <h3 class="case-name" data-i18n="c1.name"></h3>
+              <p class="case-what" data-i18n="c1.what"></p>
+              <figure class="preview" data-preview="exchange"><span class="pv-tag" data-i18n="pv.tag"></span></figure>
+              <dl class="case-facts">
+                <div><dt data-i18n="label.role"></dt><dd data-i18n="c1.role"></dd></div>
+                <div><dt data-i18n="label.built"></dt><dd data-i18n="c1.built"></dd></div>
+              </dl>
+              <dl class="metrics">
+                <div><dt>ms</dt><dd data-i18n="c1.m1"></dd></div>
+                <div><dt>1M+</dt><dd data-i18n="c1.m2"></dd></div>
+                <div><dt>0</dt><dd data-i18n="c1.m3"></dd></div>
+              </dl>
+            </li>
+            <li class="case reveal">
+              <div class="case-head"><span class="case-no">02</span><span class="case-tag" data-i18n="c2.tag"></span></div>
+              <h3 class="case-name" data-i18n="c2.name"></h3>
+              <p class="case-what" data-i18n="c2.what"></p>
+              <figure class="preview" data-preview="perps"><span class="pv-tag" data-i18n="pv.tag"></span></figure>
+              <dl class="case-facts">
+                <div><dt data-i18n="label.role"></dt><dd data-i18n="c2.role"></dd></div>
+                <div><dt data-i18n="label.built"></dt><dd data-i18n="c2.built"></dd></div>
+              </dl>
+              <dl class="metrics">
+                <div><dt>$10M+</dt><dd data-i18n="c2.m1"></dd></div>
+                <div><dt>200K</dt><dd data-i18n="c2.m2"></dd></div>
+                <div><dt>$100M+</dt><dd data-i18n="c2.m3"></dd></div>
+              </dl>
+            </li>
+            <li class="case reveal">
+              <div class="case-head"><span class="case-no">03</span><span class="case-tag" data-i18n="c3.tag"></span></div>
+              <h3 class="case-name" data-i18n="c3.name"></h3>
+              <p class="case-what" data-i18n="c3.what"></p>
+              <figure class="preview" data-preview="payments"><span class="pv-tag" data-i18n="pv.tag"></span></figure>
+              <dl class="case-facts">
+                <div><dt data-i18n="label.role"></dt><dd data-i18n="c3.role"></dd></div>
+                <div><dt data-i18n="label.built"></dt><dd data-i18n="c3.built"></dd></div>
+              </dl>
+              <dl class="metrics">
+                <div><dt>1,000s</dt><dd data-i18n="c3.m1"></dd></div>
+                <div><dt>8-fig</dt><dd data-i18n="c3.m2"></dd></div>
+                <div><dt>0</dt><dd data-i18n="c3.m3"></dd></div>
+              </dl>
+            </li>
+            <li class="case reveal">
+              <div class="case-head"><span class="case-no">04</span><span class="case-tag" data-i18n="c4.tag"></span></div>
+              <h3 class="case-name" data-i18n="c4.name"></h3>
+              <p class="case-what" data-i18n="c4.what"></p>
+              <figure class="preview" data-preview="quant"><span class="pv-tag" data-i18n="pv.tag"></span></figure>
+              <dl class="case-facts">
+                <div><dt data-i18n="label.role"></dt><dd data-i18n="c4.role"></dd></div>
+                <div><dt data-i18n="label.built"></dt><dd data-i18n="c4.built"></dd></div>
+              </dl>
+              <dl class="metrics">
+                <div><dt>#7</dt><dd data-i18n="c4.m1"></dd></div>
+                <div><dt>Live</dt><dd data-i18n="c4.m2"></dd></div>
+              </dl>
+            </li>
+          </ol>
+
+          <div class="also">
+            <p class="also-label reveal" data-i18n="work.also"></p>
+            <ul class="bets">
+              <li class="reveal"><h4 data-i18n="a1.name"></h4><p data-i18n="a1.desc"></p></li>
+              <li class="reveal"><h4 data-i18n="a2.name"></h4><p data-i18n="a2.desc"></p></li>
+              <li class="reveal"><h4 data-i18n="a3.name"></h4><p data-i18n="a3.desc"></p></li>
+              <li class="reveal"><h4 data-i18n="a4.name"></h4><p data-i18n="a4.desc"></p></li>
+              <li class="reveal"><h4 data-i18n="a5.name"></h4><p data-i18n="a5.desc"></p></li>
+              <li class="reveal"><h4 data-i18n="a6.name"></h4><p data-i18n="a6.desc"></p></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- formation: layer stack -->
+      <section id="stack" class="section" data-formation>
+        <div class="col">
+          <p class="kicker reveal" data-i18n="stack.k"></p>
+          <h2 class="title reveal" data-i18n="stack.title"></h2>
+          <p class="body reveal" data-i18n="stack.sub"></p>
+          <ol class="layers">
+            <li class="layer reveal"><span class="layer-no">L4</span><div><h3 data-i18n="l4.name"></h3><p data-i18n="l4.items"></p></div></li>
+            <li class="layer reveal"><span class="layer-no">L3</span><div><h3 data-i18n="l3.name"></h3><p data-i18n="l3.items"></p></div></li>
+            <li class="layer reveal"><span class="layer-no">L2</span><div><h3 data-i18n="l2.name"></h3><p data-i18n="l2.items"></p></div></li>
+            <li class="layer reveal"><span class="layer-no">L1</span><div><h3 data-i18n="l1.name"></h3><p data-i18n="l1.items"></p></div></li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- formation: core -->
+      <section id="engage" class="section" data-formation>
+        <div class="col">
+          <p class="kicker reveal" data-i18n="engage.k"></p>
+          <h2 class="title reveal" data-i18n="engage.title"></h2>
+          <ol class="modes">
+            <li class="mode reveal"><span class="mode-no">A</span><h3 data-i18n="e1.name"></h3><p data-i18n="e1.desc"></p></li>
+            <li class="mode reveal"><span class="mode-no">B</span><h3 data-i18n="e2.name"></h3><p data-i18n="e2.desc"></p></li>
+            <li class="mode reveal"><span class="mode-no">C</span><h3 data-i18n="e3.name"></h3><p data-i18n="e3.desc"></p></li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- formation: closed spread -->
+      <section id="contact" class="contact" data-formation>
+        <div class="contact-inner">
+          <p class="kicker reveal" data-i18n="contact.k"></p>
+          <h2 class="display reveal" data-i18n="contact.title"></h2>
+          <p class="lede reveal" data-i18n="contact.sub"></p>
+          <div class="ctas reveal">
+            <a class="btn btn-primary" data-link="tg" target="_blank" rel="noopener">
+              <span data-i18n="cta.tg"></span><span class="arrow" aria-hidden="true">→</span>
+            </a>
+            <a class="btn btn-ghost" data-link="x" target="_blank" rel="noopener">
+              <span data-i18n="cta.x"></span><span class="arrow" aria-hidden="true">↗</span>
+            </a>
+            <a class="btn btn-ghost" data-link="gh" target="_blank" rel="noopener">
+              <span data-i18n="cta.gh"></span><span class="arrow" aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+        <footer class="footer">
+          <span data-i18n="footer.copy"></span>
+          <nav class="socials" aria-label="Social">
+            <a data-link="tg" target="_blank" rel="noopener">Telegram</a>
+            <a data-link="x" target="_blank" rel="noopener">X</a>
+            <a data-link="gh" target="_blank" rel="noopener">GitHub</a>
+          </nav>
+          <span class="status"><span class="live-dot"></span><span data-i18n="footer.status"></span></span>
+        </footer>
+      </section>
+    </main>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
